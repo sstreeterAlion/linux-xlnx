@@ -1,5 +1,5 @@
 /*
- * dts file for Xilinx ZynqMP ZCU102
+ * dts file for Alion Soteria
  *
  * (C) Copyright 2015, Xilinx, Inc.
  *
@@ -96,8 +96,8 @@
 	local-mac-address = [00 0a 35 00 02 90];
 	phy-handle = <&phy0>;
 	phy-mode = "rgmii-id";
-	phy0: phy@21 {
-		reg = <21>;
+	phy0: phy@5 {
+		reg = <5>;
 		ti,rx-internal-delay = <0x8>;
 		ti,tx-internal-delay = <0xa>;
 		ti,fifo-depth = <0x1>;
@@ -227,9 +227,9 @@
         compatible = "max15301";
         reg = <0x1A>;
       };
-      max15303@20{ //u4
+      max15303@1B{ //u4
         compatible = "max15303";
-        reg = <0x20>;
+        reg = <0x1B>;
       };
     };
     
